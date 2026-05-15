@@ -1,8 +1,11 @@
 import Hero from "./components/Home/Hero"
+
+import { Footer } from "./components/Layout/Footer";
 import Header from "./components/Layout/Header"
 import About from "./components/pages/About"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ui/ScrollToTop";
 
 
 
@@ -10,6 +13,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col">
 
         <Header />
@@ -20,7 +24,7 @@ function App() {
 
           </Routes>
         </main>
-        
+        <Footer />
 
       </div>
     </BrowserRouter>

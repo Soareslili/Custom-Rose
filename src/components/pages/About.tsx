@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom";
 
-import Artist  from "../../assets/AboutArtist.png";
+import Artist from "../../assets/AboutArtist.png";
 import HeroImg from "../../assets/HeroImg.png"
 import { SectionTitle } from "../Layout/SectionTitle";
 
@@ -13,9 +13,9 @@ const About = () => {
     <>
       <section id="/about" className="relative pt-32 pb-20">
         <div className="container-custom">
-          <p className="text-xs uppercase tracking-[0.5em] text-primary mb-4">About</p>
+          <p className="text-xs uppercase tracking-[0.5em] text-primary mb-4">Sobre</p>
           <h1 className="font-display text-5xl md:text-7xl font-bold uppercase tracking-wider">
-            Our <span className="text-primary">Studio</span>
+            Nosso <span className="text-primary">Studio</span>
           </h1>
           <div className="red-divider !mx-0" />
         </div>
@@ -33,21 +33,21 @@ const About = () => {
           />
           <div>
             <h2 className="font-display text-3xl md:text-4xl uppercase tracking-wider mb-4">
-              Twelve Years of Ink, Art & Soul
+              Doze anos de tinta, arte e alma
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Founded in 2013, Custom Rose was born from a desire to elevate tattoo culture into a
-              true premium experience. We believe a tattoo is not a product — it's a collaboration
-              between artist and client, a permanent piece of art carried for life.
+              Fundada em 2013, a Custom Rose nasceu do desejo de elevar a cultura da tatuagem a um
+              verdadeira experiência premium. Acreditamos que uma tatuagem não é um produto – é uma colaboração
+              entre artista e cliente, uma obra de arte permanente e levada para toda a vida.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Our studio is built on three pillars: artistry, hygiene, and atmosphere. From the
-              dimmed cinematic lighting to the curated music and private rooms, every detail is
-              designed to make your visit unforgettable.
+              Nosso estúdio é construído sobre três pilares: arte, higiene e atmosfera. Do
+              iluminação cinematográfica reduzida para a música selecionada e salas privadas, cada detalhe é
+              projetado para tornar sua visita inesquecível.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Whether your dream is a sleeve of black-and-grey realism, a delicate fine-line piece,
-              or bold blackwork — our artists will guide you from concept to final ink.
+              Quer o seu sonho seja uma manga de realismo em preto e cinza, uma peça delicada de linhas finas,
+              ou blackwork ousado - nossos artistas irão guiá-lo desde o conceito até a tinta final.
             </p>
           </div>
         </div>
@@ -55,12 +55,12 @@ const About = () => {
 
       <section className="section-padding bg-surface/40">
         <div className="container-custom">
-          <SectionTitle eyebrow="Our Values" title="What We Stand For" />
+          <SectionTitle eyebrow="Nossos valores" title="O que defendemos" />
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { t: "Artistry First", d: "Every line, every shade — designed with intention." },
-              { t: "Total Hygiene", d: "Hospital-grade sterilization, single-use needles only." },
-              { t: "Client Comfort", d: "Private rooms, premium aftercare, lifetime support." },
+              { t: "Arte em primeiro lugar", d: "Cada linha, cada tonalidade — desenhada com intenção." },
+              { t: "Higiene Total", d: "Esterilização de nível hospitalar, apenas agulhas descartáveis." },
+              { t: "Conforto do cliente", d: "Quartos privados, cuidados posteriores premium, suporte vitalício." },
             ].map((v) => (
               <div key={v.t} className="p-8 border border-border bg-surface-elevated">
                 <h3 className="font-display text-2xl uppercase tracking-wider mb-3">{v.t}</h3>
@@ -73,7 +73,7 @@ const About = () => {
               to="/contact"
               className="inline-flex bg-primary text-primary-foreground px-8 py-4 text-sm uppercase tracking-widest font-semibold shadow-red"
             >
-              Book a Visit
+             Faça um Orçamento
             </Link>
           </div>
         </div>
