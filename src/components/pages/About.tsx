@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Artist from "../../assets/AboutArtist.png";
 import HeroImg from "../../assets/HeroImg.png"
-import { SectionTitle } from "../Layout/SectionTitle";
+import { SectionTitle } from "../Home/SectionTitle";
 
 
 

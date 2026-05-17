@@ -6,6 +6,9 @@ import About from "./components/pages/About"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ui/ScrollToTop";
+import ArtistsPage from "./components/pages/Artists";
+import PortfolioPage from "./components/pages/Portfolio";
+import PricingPage from "./components/pages/Pricing";
 
 
 
@@ -21,6 +24,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />
+            <Route path="/artists" element={<ArtistsPage/>} />
+            <Route path="/portfolio" element={<PortfolioPage/>} />
+            <Route path="/pricing" element={<PricingPage/>}/>
 
           </Routes>
         </main>

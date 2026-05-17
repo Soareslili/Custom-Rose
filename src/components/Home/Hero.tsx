@@ -10,9 +10,9 @@ import a2 from '../../assets/a2.png';
 import a3 from '../../assets/a3.png';
 
 import { Link } from "react-router-dom";
-import { SectionTitle } from "../Layout/SectionTitle";
+import { SectionTitle } from "./SectionTitle";
 import { Award, Heart, Palette, Shield, Sparkles, Star } from "lucide-react";
-import ScrollToTop from "../ui/ScrollToTop";
+
 
 const features = [
   { icon: Award, title: "Artistas Profissionais", desc: "Equipe premiada com mais de 10 anos de experiência." },
