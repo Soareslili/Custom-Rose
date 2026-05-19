@@ -96,7 +96,7 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(false)}
               className="mt-2 bg-primary text-primary-foreground px-6 py-3 text-xs uppercase tracking-widest font-semibold text-center"
             >
-              Book Appointment
+              Faça um Orçamento
             </Link>
           </nav>
         </div>

@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ui/ScrollToTop";
 import ArtistsPage from "./components/pages/Artists";
 import PortfolioPage from "./components/pages/Portfolio";
 import PricingPage from "./components/pages/Pricing";
+import ContactPage from "./components/pages/Contact";
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/artists" element={<ArtistsPage/>} />
             <Route path="/portfolio" element={<PortfolioPage/>} />
             <Route path="/pricing" element={<PricingPage/>}/>
+            <Route path="/contact" element={<ContactPage/>} />
 
           </Routes>
         </main>
