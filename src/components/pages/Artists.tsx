@@ -5,6 +5,7 @@ import a2 from "../../assets/a2.png";
 import a3 from "../../assets/a3.png";
 import FancyButton from "../ui/shiny-button";
 import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { AnimatedText } from "../ui/Animated-text";
 
 
 
@@ -82,15 +83,12 @@ function ArtistsPage() {
 
       <section className="section-padding bg-surface/40">
         <div className="container-custom">
-          <SectionTitle title="Quer trabalhar conosco?" subtitle="A Custom Rose está sempre em busca de talentos excepcionais. Envie seu portfólio." />
-          <div className="text-center">
-            <a
-              href="mailto:hello@customrose.tattoo"
-              className="inline-flex bg-primary text-primary-foreground px-8 py-4 text-sm uppercase tracking-widest font-semibold shadow-red animate-bounce"
-            >
-              Inscreva-se agora
-            </a>
-          </div>
+          <SectionTitle title="Gostou da nossa equipe.?" subtitle=" Venha nos visitar, e faça um orçamento.!" />
+           <AnimatedText 
+      text="CUSTOM ROSE" 
+      textClassName="text-[4rem] md:text-[6rem] font-bold"
+    
+    />
         </div>
       </section>
     </>

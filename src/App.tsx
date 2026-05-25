@@ -10,14 +10,23 @@ import ArtistsPage from "./components/pages/Artists";
 import PortfolioPage from "./components/pages/Portfolio";
 import PricingPage from "./components/pages/Pricing";
 import ContactPage from "./components/pages/Contact";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
 function App() {
 
+useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <AOS.init />
       <div className="min-h-screen flex flex-col">
 
         <Header />

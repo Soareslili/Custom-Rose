@@ -61,8 +61,12 @@ const About = () => {
               { t: "Arte em primeiro lugar", d: "Cada linha, cada tonalidade — desenhada com intenção." },
               { t: "Higiene Total", d: "Esterilização de nível hospitalar, apenas agulhas descartáveis." },
               { t: "Conforto do cliente", d: "Quartos privados, cuidados posteriores premium, suporte vitalício." },
-            ].map((v) => (
-              <div key={v.t} className="p-8 border border-border bg-surface-elevated">
+            ].map((v, index) => (
+              <div key={v.t}
+                data-aos="zoom-in"
+                data-aos-delay={index * 150}
+                data-aos-duration="600"
+                className="p-8 border border-border bg-surface-elevated hover:border-primary transition-smooth">
                 <h3 className="font-display text-2xl uppercase tracking-wider mb-3">{v.t}</h3>
                 <p className="text-muted-foreground">{v.d}</p>
               </div>
@@ -73,7 +77,7 @@ const About = () => {
               to="/contact"
               className="inline-flex bg-primary text-primary-foreground px-8 py-4 text-sm uppercase tracking-widest font-semibold shadow-red"
             >
-             Faça um Orçamento
+              Faça um Orçamento
             </Link>
           </div>
         </div>

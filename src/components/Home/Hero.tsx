@@ -54,7 +54,7 @@ const Hero = () => {
     <>
 
       <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-   
+
         <img
           src={HeroImg}
           alt="Tattooed artist holding tattoo machine in dark studio"
@@ -65,7 +65,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-hero" />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/45 to-transparent" />
 
-        <div id="/"  className="container-custom relative z-10 py-20">
+        <div id="/" className="container-custom relative z-10 py-20">
           <div className="max-w-2xl  animate-fade-up">
             <p className="text-xs uppercase tracking-[0.5em] text-primary mb-6">
               Premium Tattoo Studio
@@ -131,7 +131,7 @@ const Hero = () => {
               conforto, segurança e luxo tranquilo.
             </p>
             <Link
-            to={"/about"}
+              to={"/about"}
               className="inline-flex items-center bg-primary text-primary-foreground px-7 py-3 text-xs uppercase tracking-widest font-semibold shadow-red"
             >
               Saiba Mais
@@ -140,14 +140,17 @@ const Hero = () => {
         </div>
       </section>
 
-       {/* WHY CHOOSE US */}
+   
       <section className="section-padding bg-surface/40">
         <div className="container-custom">
           <SectionTitle eyebrow="Por que nos escolher" title="Feito com precisão" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map(({ icon: Icon, title, desc }) => (
+            {features.map(({ icon: Icon, title, desc }, index) => (
               <div
                 key={title}
+                data-aos="zoom-in"
+                data-aos-delay={index * 150}
+                data-aos-duration="600"
                 className="group p-8 bg-surface-elevated border border-border hover:border-primary transition-smooth"
               >
                 <div className="w-12 h-12 grid place-items-center bg-accent shadow-red mb-5 group-hover:scale-110 transition-smooth">
@@ -161,13 +164,17 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* PORTFOLIO */}
+     
       <section className="section-padding">
         <div className="container-custom">
           <SectionTitle eyebrow="Nossos Trabalhos" title="Portfolio" subtitle="Um vislumbre de peças recentes de nossos artistas" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {portfolio.map((p) => (
-              <div key={p.label} className="group relative overflow-hidden aspect-[4/5]">
+            {portfolio.map((p, index) => (
+              <div key={p.label}
+                data-aos="fade-right"
+                data-aos-delay={index * 150}
+                data-aos-duration="800"
+                className="group relative overflow-hidden aspect-[4/5]">
                 <img
                   src={p.src}
                   alt={`${p.label} tattoo`}
@@ -189,19 +196,23 @@ const Hero = () => {
               to="/portfolio"
               className="inline-flex border border-border hover:border-primary hover:text-primary text-foreground px-7 py-3 text-xs uppercase tracking-widest font-semibold transition-smooth"
             >
-             Veja Mais
+              Veja Mais
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ARTISTS */}
+     
       <section className="section-padding bg-surface/40">
         <div className="container-custom">
           <SectionTitle eyebrow=" Nosso Time" title="Nossos Artistas" />
           <div className="grid md:grid-cols-3 gap-6">
-            {artists.map((a) => (
-              <div key={a.name} className="group relative overflow-hidden bg-surface-elevated">
+            {artists.map((a, index) => (
+              <div key={a.name}
+                data-aos="fade-right"
+                data-aos-offset={index * 200}
+                data-aos-easing="ease-in-sine"
+                className="group relative overflow-hidden bg-surface-elevated">
                 <div className="aspect-[4/5] overflow-hidden">
                   <img
                     src={a.img}
@@ -222,15 +233,18 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* PROCESS */}
+     
       <section className="section-padding">
         <div className="container-custom">
           <SectionTitle eyebrow="Como funciona" title="Nosso Processo" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {steps.map((s) => (
+            {steps.map((s, index) => (
               <div
                 key={s.n}
                 className="relative p-8 border border-border bg-surface/60 hover:border-primary transition-smooth"
+                data-aos="zoom-in"
+                data-aos-delay={index * 150}
+                data-aos-duration="600"
               >
                 <span className="font-display text-6xl font-black text-primary opacity-90">
                   {s.n}
@@ -243,13 +257,17 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+     
       <section className="section-padding bg-surface/40">
         <div className="container-custom">
           <SectionTitle eyebrow="Depoimentos" title="O que os clientes dizem" />
           <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div key={t.name} className="p-8 bg-surface-elevated border border-border">
+            {testimonials.map((t, index) => (
+              <div key={t.name}
+                data-aos="zoom-in-down"
+                data-aos-delay={index * 150}
+                data-aos-duration="800"
+                className="p-8 bg-surface-elevated border border-border">
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: t.rating }).map((_, i) => (
                     <Star key={i} size={16} className="fill-primary text-primary" />
@@ -263,7 +281,7 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* CTA */}
+     
       <section className="section-padding">
         <div className="container-custom">
           <div className="relative overflow-hidden p-12 md:p-20 text-center bg-gradient-to-br from-surface-elevated to-surface border border-border">

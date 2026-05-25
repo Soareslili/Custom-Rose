@@ -75,7 +75,7 @@ function ContactPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-primary text-primary-foreground px-8 py-4 text-sm uppercase tracking-widest font-semibold shadow-red hover:opacity-90 transition-smooth"
+                  className="w-full bg-primary text-primary-foreground cursor-pointer px-8 py-4 text-sm uppercase tracking-widest font-semibold shadow-red hover:opacity-90 transition-smooth"
                 >
                   Agendar consulta
                 </button>

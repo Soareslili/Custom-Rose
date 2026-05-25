@@ -6,20 +6,25 @@ import p3 from "../../assets/p3.png";
 import p4 from "../../assets/p4.png";
 import p5 from "../../assets/p5.png";
 import p6 from "../../assets/p6.png";
+import p7 from "../../assets/p7.png";
+import p8 from "../../assets/p8.png";
+import p9 from "../../assets/p9.png";
 import { SectionTitle } from "../Home/SectionTitle";
 
 
 
 const works = [
-  { src: p1, label: "Black & Grey", style: "Realism" },
-  { src: p2, label: "Portrait", style: "Old School" },
-  { src: p3, label: "Geometric", style: "Blackwork" },
-  { src: p4, label: "Skull & Roses", style: "Traditional" },
-  { src: p5, label: "Snake & Florals", style: "Fine Line" },
-  { src: p6, label: "Tribal Spine", style: "Tribal" },
-  { src: p1, label: "Rose Forearm", style: "Black & Grey" },
-  { src: p3, label: "Sacred Geometry", style: "Blackwork" },
-  { src: p5, label: "Botanical", style: "Fine Line" },
+  { src: p1, label: "Hummingbird Floral", style: "Color Realism" },
+  { src: p2, label: "Lion Portrait", style: "Black & Grey Realism" },
+  { src: p3, label: "Lion Botanical", style: "Color Realism" },
+
+  { src: p4, label: "Dragon Sleeve", style: "Oriental / Japanese" },
+  { src: p5, label: "Rose Fine Line", style: "Fine Line" },
+  { src: p6, label: "Lion Realism", style: "Black & Grey Realism" },
+
+  { src: p7, label: "Lotus Mandala", style: "Geometric / Mandala" },
+  { src: p8, label: "Tiger Floral", style: "Color Realism" },
+  { src: p9, label: "Lion Tribal", style: "Tribal / Blackwork" },
 ];
 
 function PortfolioPage() {
