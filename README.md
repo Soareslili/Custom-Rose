@@ -71,7 +71,4 @@ npm run dev
 - O arquivo `src/index.css` define as variáveis de tema (cores/fundos) e a integração do Tailwind.
 - `src/components/ui/ScrollToTop.tsx` garante que o topo seja exibido ao navegar entre rotas.
 
-## Licença
-
-Projeto sem licença definida (padrão do repositório). 
 
