@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+<img src="./src/assets/HeroImg.png" alt="Preview do projeto" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Custom Rose Tattoo Studio
 
-Currently, two official plugins are available:
+Site (SPA) para o estúdio **Custom Rose**, com páginas de apresentação, equipe, portfólio, preços e um formulário de contato/orçamento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Layout responsivo com **Header** e **Footer** fixos no fluxo da página
+- Navegação por rotas:
+  - `/` (Home / Hero)
+  - `/about`
+  - `/artists`
+  - `/portfolio`
+  - `/pricing`
+  - `/contact`
+- Animações com **AOS** (Animate On Scroll)
+- Efeitos visuais e botões especiais (ex.: `FancyButton` “shiny button”)
+- Estilo com **Tailwind CSS** e tema/cores definidos em `src/index.css`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack
 
-## Expanding the ESLint configuration
+- **React** + **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **react-router-dom**
+- **AOS**
+- **framer-motion** (dependência do projeto)
+- **lucide-react** / **react-icons** (ícones)
+- **clsx** / **tailwind-merge** (utilitários de classe)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Pré-requisitos
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js (versão compatível com o Vite)
+- npm (ou equivalente)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Como rodar localmente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Instale as dependências:
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Inicie o servidor de desenvolvimento:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+3. Abra o projeto no navegador (normalmente em `http://localhost:5173`).
+
+## Scripts
+
+- `npm run dev` — inicia o Vite em modo de desenvolvimento
+- `npm run build` — compila com TypeScript e gera build do Vite
+- `npm run lint` — executa o ESLint
+- `npm run preview` — pré-visualiza a build gerada
+
+## Estrutura (alto nível)
+
+- `src/App.tsx` — configuração das rotas e inicialização do AOS
+- `src/components/Layout/` — `Header`, `Footer`
+- `src/components/pages/` — páginas: `About`, `Artists`, `Portfolio`, `Pricing`, `Contact`
+- `src/components/Home/` — seções da Home (ex.: `Hero`, `SectionTitle`)
+- `src/components/ui/` — componentes reutilizáveis (ex.: `ScrollToTop`, `shiny-button`, `Animated-text`)
+- `src/assets/` — imagens do portfólio e assets visuais
+
+## Observações
+
+- O arquivo `src/index.css` define as variáveis de tema (cores/fundos) e a integração do Tailwind.
+- `src/components/ui/ScrollToTop.tsx` garante que o topo seja exibido ao navegar entre rotas.
+
+## Licença
+
+Projeto sem licença definida (padrão do repositório). 
+
