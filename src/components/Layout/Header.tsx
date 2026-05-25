@@ -40,9 +40,8 @@ const Header = () => {
           className="flex items-center gap-2 group"
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <span className="font-display text-xl tracking-widest text-foreground group-hover:text-primary transition-smooth">
-            CUSTOM <span className="text-primary">ROSE</span>
-          </span>
+          <img src="/logo.png" alt="Custom Rose Logo" className="w-20 h-20 md:ml-15" />
+          
         </Link>
 
         {/* MENU DESKTOP */}

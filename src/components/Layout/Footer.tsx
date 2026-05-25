@@ -10,9 +10,8 @@ export function Footer() {
         <footer className="border-t border-border bg-surface/50 mt-20">
             <div className="container-custom py-16 grid gap-12 md:grid-cols-4">
                 <div className="md:col-span-2">
-                    <div className="font-display text-2xl tracking-widest mb-4">
-                        CUSTOM <span className="text-gradient-red">ROSE</span>
-                    </div>
+                    <img src="/logo.png" alt="Custom Rose Tattoo Studio Logo" className="w-25 mb-4" />
+                        
                     <p className="text-muted-foreground max-w-sm leading-relaxed">
                         Um estúdio de tatuagem premium dedicado a transformar sua história em arte atemporal em sua pele.
                     </p>
